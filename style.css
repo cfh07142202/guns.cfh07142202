@@ -11,10 +11,22 @@ body {
     background-position: center;
     flex-direction: column;
 }
+/*yes i am very aware of the bug here */
+@media (prefers-color-scheme: light ) {
+    body {
+        background-image: url(images/background.gif);
+    }
+}
 @media (prefers-reduced-motion: reduce) {
     body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/StillBackground.jpg');
         background-color: #000000;
+    }
+    .app-icon:hover {
+        transform: none;
+    }
+    .app-icon {
+        transition: none;
     }
 }
 #main-container {
