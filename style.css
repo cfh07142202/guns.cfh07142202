@@ -54,7 +54,7 @@ body {
     background-position: center;
     border-radius: 50%;     
     flex-shrink: 0;       
-    margin-left: 15px;
+    margin-left: 20px;
 }
 #username-text {
     margin: 10px;
@@ -89,8 +89,8 @@ body {
     margin-right: 2px;
 }
 #github-icon {
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
     background-color: rgb(37, 37, 37);
     border-radius: 50px;
 }
@@ -104,4 +104,28 @@ body {
 #footer-text {
     color: rgb(180, 179, 179);
     font-size: 10px;
+}
+@media (min-width: 1200px) {
+    #glass-card {
+        height: 150px;
+        width: 280px;
+    }
+    #server-tag-container {
+        width: 50px;
+        height: 35px;
+    }
+    #server-tag {
+        font-size: 20px;
+    }
+    #discord-server-icon {
+        height: 15px;
+        width: 15px;
+    }
+    #discord-profile-pic {
+        height: 80px;
+        width: 80px;
+    }
+    #username-text {
+        font-size: 25px;
+    }
 }
