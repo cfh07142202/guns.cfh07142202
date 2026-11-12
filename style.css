@@ -11,6 +11,11 @@ body {
     background-position: center;
     flex-direction: column;
 }
+@media (prefers-reduced-transparency: reduce) {
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/StillBackground.jpg');
+    }
+}
 #main-container {
     display: flex;
     justify-content: center;
@@ -25,9 +30,10 @@ body {
     height: 100px;
     width: 200px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
-    background-color: rgba(253, 253, 253, 0.075);
+    backdrop-filter: blur(8px);
+    background-color: rgba(57, 57, 57, 0.254);
     margin-top: 75px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 #discord-profile-pic {
     height: 65px;
@@ -117,5 +123,11 @@ body {
     }
     #glass-card {
         margin-top: 30px;
+    }
+}
+@media (min-width: 1490px) {
+    #github-icon {
+        width: 70px;
+        height: 70px;
     }
 }
